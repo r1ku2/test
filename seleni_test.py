@@ -1,15 +1,6 @@
-import lxml
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import chromedriver_binary
 import time
-import pandas as pd
-import requests
-import csv
 import os
 import datetime
 import slackweb
@@ -17,7 +8,6 @@ import slackweb
 def data_update():
     url = 'https://www.ibm.com/docs/ja/szs/2.2?topic=release-notes'
     options = Options()
-    options.add_argument('--headless')
     driver = webdriver.Chrome(options=options)
 
 
