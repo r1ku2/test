@@ -14,9 +14,6 @@ RUN apt-get update && apt-get upgrade -y
 
 WORKDIR /app
 
-# Exposing default port for streamlit
-EXPOSE 8501
-
 # Install requirements
 COPY requirements.txt .
 RUN pip install -r requirements.txt
